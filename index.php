@@ -68,10 +68,17 @@
                     <h3 class="mx-5 text-center description-hotel py-2"><?php echo $hotel['description']?></h3>
                 </div>
                 <div class="col d-flex flex-column">
-                <h2 class="text-center mb-3">Parcheggio</h2>
-                <h3 class="mx-5 text-center parking-hotel py-2"><?php echo $hotel['parking']?></h3>
+                    <h2 class="text-center mb-3">Parcheggio</h2>
+                    <h3 class="mx-5 text-center parking-hotel py-2"><?php echo $hotel['parking']?></h3>
                 </div>        
-                
+                <div class="col d-flex flex-column">
+                    <h2 class="text-center mb-3">Voto</h2>
+                    <h3 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['vote']?></h3>
+                </div>
+                <div class="col d-flex flex-column">
+                    <h2 class="text-center mb-3">Distanza dal centro</h2>
+                    <h3 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['vote']?></h3>
+                </div>     
                     
                 <?php } ?>
             </div>      
