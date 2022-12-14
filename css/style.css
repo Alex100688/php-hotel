@@ -1,8 +1,14 @@
 body{
     background-color: #eeee;
 }
-    
-h2{
+.square{
+    width: calc(100% / 5);
+}
+.box-hotel{
+    border: 5px solid black;
+}
+ 
+h5{
     background-color: lightgreen;
     font-weight: 900;
 }
@@ -12,7 +18,7 @@ h2{
 }
 
 .description-hotel{
-    color: aqua;
+    color: blue;
     font-weight: 700;
 }
 .parking-hotel{

@@ -55,33 +55,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row gx-4">
             <div class="col-12">
-                <h1 class="text-center mt-5">Elenco dei migliori Hotel della zona</h1>
+                <h1 class="text-center my-5">Elenco dei migliori Hotel della zona</h1>
             </div>
             <?php foreach ($hotels as $hotel){ ?>
-                <div class="col-12  d-flex flex-column mt-5 py-3 ">
-                    <h2 class="text-center mb-3">Nome</h2> 
-                    <h3 class="mx-5 text-center name-hotel py-2"><?php echo $hotel['name']?></h3>
-                <div class="col d-flex flex-column">
-                    <h2 class="text-center mb-3">Descrizione</h2>
-                    <h3 class="mx-5 text-center description-hotel py-2"><?php echo $hotel['description']?></h3>
+                <div class="square box-hotel d-flex flex-column  ">
+                    <h5 class="text-center mb-3">Nome</h5> 
+                    <h6 class="mx-5 text-center name-hotel py-2"><?php echo $hotel['name']?></h6>
+                </div>      
+                <div class="square box-hotel d-flex flex-column">
+                    <h5 class="text-center mb-3">Descrizione</h5>
+                    <h6 class="mx-5 text-center description-hotel py-2"><?php echo $hotel['description']?></h6>
                 </div>
-                <div class="col d-flex flex-column">
-                    <h2 class="text-center mb-3">Parcheggio</h2>
-                    <h3 class="mx-5 text-center parking-hotel py-2"><?php echo $hotel['parking']?></h3>
+                <div class="square box-hotel d-flex flex-column">
+                    <h5 class="text-center mb-3">Parcheggio</h5>
+                    <h6 class="mx-5 text-center parking-hotel py-2"><?php echo $hotel['parking']?></h6>
                 </div>        
-                <div class="col d-flex flex-column">
-                    <h2 class="text-center mb-3">Voto</h2>
-                    <h3 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['vote']?></h3>
+                <div class="square box-hotel d-flex flex-column">
+                    <h5 class="text-center mb-3">Voto</h5>
+                    <h6 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['vote']?></h6>
                 </div>
-                <div class="col d-flex flex-column">
-                    <h2 class="text-center mb-3">Distanza dal centro</h2>
-                    <h3 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['distance_to_center']?></h3>
-                </div>     
-                    
-                <?php } ?>
-            </div>      
+                <div class="square box-hotel d-flex flex-column">
+                    <h5 class="text-center mb-3">Distanza dal centro</h5>
+                    <h6 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['distance_to_center']?> km</h6>
+                </div>             
+            <?php } ?>
             
 
         </div>
