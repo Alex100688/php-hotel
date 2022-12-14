@@ -77,7 +77,7 @@
                 </div>
                 <div class="col d-flex flex-column">
                     <h2 class="text-center mb-3">Distanza dal centro</h2>
-                    <h3 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['vote']?></h3>
+                    <h3 class="mx-5 text-center vote-hotel py-2"><?php echo $hotel['distance_to_center']?></h3>
                 </div>     
                     
                 <?php } ?>
