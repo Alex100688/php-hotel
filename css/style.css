@@ -1,8 +1,17 @@
-.name-hotel{
-    background-color: lightskyblue;
+
     
+h2{
+    background-color: lightgreen;
+    font-weight: 900;
 }
-h4{
+.name-hotel{
     background-color: lightgrey;
     border: 5px solid black;
+}
+
+.description-hotel{
+    background-color: aqua;
+}
+.parking-hotel{
+    background-color: lightskyblue;
 }

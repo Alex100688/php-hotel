@@ -59,10 +59,20 @@
             <div class="col-12">
                 <h1 class="text-center mt-5">Elenco dei migliori Hotel della zona</h1>
             </div>
-            <div class="col-12 name-hotel  d-flex flex-column mt-5 ">
-                <?php foreach ($hotels as $hotel){ ?>
-                    <h4 class="mx-5 text-center py-2"><?php echo $hotel['name']?></h4>
-                        <p><?php echo $hotel ['description']?></p>
+            <?php foreach ($hotels as $hotel){ ?>
+                <div class="col-12  d-flex flex-column mt-5 py-3 ">
+                    <h2 class="text-center mb-3">Nome</h2> 
+                    <h3 class="mx-5 text-center name-hotel py-2"><?php echo $hotel['name']?></h3>
+                <div class="col d-flex flex-column">
+                    <h2 class="text-center mb-3">Descrizione</h2>
+                    <h3 class="mx-5 text-center description-hotel py-2"><?php echo $hotel['description']?></h3>
+                </div>
+                <div class="col d-flex flex-column">
+                <h2 class="text-center mb-3">Parcheggio</h2>
+                <h3 class="mx-5 text-center parking-hotel py-2"><?php echo $hotel['parking']?></h3>
+                </div>        
+                
+                    
                 <?php } ?>
             </div>      
             
