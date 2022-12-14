@@ -37,7 +37,8 @@
             'distance_to_center' => 50
         ],
 
-    ];  
+    ]; 
+    
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +53,18 @@
     <!--/ INSERITO BOOTSTRAP -->
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center mt-5">Elenco dei migliori Hotel della zona</h1>
+            </div>
+            <div class="col">
+                <h3 class="mt-3">Nomi Hotel</h3>
+            </div>
+            <?php foreach ($hotels as $hotel) { ?>
+                <p><?php echo $hotel["name"]; ?></p>
+            <?php } ?>
+        </div>
+    </div>
 </body>
 </html>
